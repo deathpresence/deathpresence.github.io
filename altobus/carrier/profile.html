@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>AltoBus</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css"></link>
+    <link rel="stylesheet" href="../assets/fontawesome/css/fontawesome-all.min.css">
+</head>
+
+<body class="body">
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="col justify-content-end align-items-center">
+                    <h2 class="navbar-brand">
+                        <a href="main.html">AltoBus</a>
+                    </h2>
+                    <ul class="list-inline float-right">
+                        <li class="list-inline-item">
+                            <a class="btn header-notification" id="dropdownChat" data-toggle="dropdown">
+                                <i class="fal fa-bell"></i>
+                            </a>
+                            <div class="dropdown-menu chat" aria-labelledby="dropdownChat">
+
+                            </div>
+                        </li>
+                        <li class="list-inline-item dropdown">
+                            <a class="btn dropdown-toggle logged-user" id="dropdownMenuLink" data-toggle="dropdown">
+                                Стратегическое Решение+
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="index.html">
+                                    <i class="fas fa-chart-bar"></i>
+                                    Сделки</a>
+                                <a class="dropdown-item" href="portfolio.html">
+                                    <i class="fas fa-briefcase"></i>
+                                    Портфель</a>
+                                <a class="dropdown-item" href="profile.html">
+                                    <i class="fas fa-user"></i>
+                                    Профиль</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="login.html">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    Выход</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="/carrier/main.html" class="nav-link">
+                            <i class="fal fa-home"></i>
+                            Главная</a>
+                    </li>
+                    <li class="nav-item with-sub">
+                        <a href="#" class="nav-link">
+                            <i class="fal fa-file-alt"></i>Заявки
+                            <i class="fal fa-angle-down"></i>
+                        </a>
+                        <div class="sub-item">
+                            <ul>
+                                <li>
+                                    <a href="/carrier/bids.html">Биржа заявок</a>
+                                </li>
+                                <li>
+                                    <a href="/carrier/mybids.html">Мои заявки</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/carrier/buses.html" class="nav-link">
+                            <i class="fal fa-bus"></i>Автобусы</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="/carrier/profile.html" class="nav-link">
+                            <i class="fal fa-user-alt"></i>Профиль</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/carrier/ticket.html" class="nav-link">
+                            <i class="fal fa-info-circle"></i>
+                            Поддержка</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row row-xs">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card card-status">
+                        <div class="media">
+                            <i class="fal fa-archive"></i>
+                            <div class="media-body">
+                                <h2>32,604</h2>
+                                <p>Всего заявок</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mg-t-10 mg-sm-t-0">
+                    <div class="card card-status">
+                        <div class="media">
+                            <i class="icon ion-ios-bookmarks-outline tx-teal"></i>
+                            <div class="media-body">
+                                <h2>17,583</h2>
+                                <p>Активных заявок</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mg-t-10 mg-lg-t-0">
+                    <div class="card card-status">
+                        <div class="media">
+                            <i class="icon ion-ios-cloud-upload-outline tx-primary"></i>
+                            <div class="media-body">
+                                <h2>61,119</h2>
+                                <p>Ожидают оплаты</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mg-t-10 mg-lg-t-0">
+                    <div class="card card-status">
+                        <div class="media">
+                            <i class="icon ion-ios-analytics-outline tx-pink"></i>
+                            <div class="media-body">
+                                <h2>2,942</h2>
+                                <p>Ожидают подтверждения</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-xs">
+                <div class="col-lg-8">
+                    <div class="card card-table">
+                        <div class="card-body">
+                            <div class="card-title">Мои данные</div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered mg-b-0">
+
+                                    <tr>
+                                        <th>Тип аккаунта</th>
+                                        <td>Перевозчик</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Название организации</th>
+                                        <td>Стратегичесое решение+</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Контактный телефон</th>
+                                        <td>+9658741024</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Номер лицензии</th>
+                                        <td>АБ 16 331200</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Статус проверки</th>
+                                        <td>Не проверен системой</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card card-info">
+                        <div class="card-body pd-40">
+                            <div class="d-flex justify-content-center mg-b-30">
+                                <img src="../assets/duskicons/icons8-contact-100.png" alt="">
+                            </div>
+                            <h5 class="mg-b-20">Вы можете редактировать профиль</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Even
+                                the all-powerful.</p>
+                            <a href="/carrier/profile-edit.html" class="btn btn-primary btn-block">Изменить данные</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-xs">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">Настройки</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>AltoBus v01.04 © 2018</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

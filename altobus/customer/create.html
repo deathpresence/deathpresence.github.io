@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>AltoBus</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css"></link>
+    <link rel="stylesheet" href="../assets/fontawesome/css/fontawesome-all.min.css">
+</head>
+
+<body class="body">
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="col justify-content-end align-items-center">
+                    <h2 class="navbar-brand">
+                        <a href="main.html">AltoBus</a>
+                    </h2>
+                    <ul class="list-inline float-right">
+                        <li class="list-inline-item">
+                            <a class="btn header-notification" id="dropdownChat" data-toggle="dropdown">
+                                <i class="fal fa-bell"></i>
+                            </a>
+                            <div class="dropdown-menu chat" aria-labelledby="dropdownChat">
+
+                            </div>
+                        </li>
+                        <li class="list-inline-item dropdown">
+                            <a class="btn dropdown-toggle logged-user" id="dropdownMenuLink" data-toggle="dropdown">
+                                Стратегическое Решение+
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="index.html">
+                                    <i class="fas fa-chart-bar"></i>
+                                    Сделки</a>
+                                <a class="dropdown-item" href="portfolio.html">
+                                    <i class="fas fa-briefcase"></i>
+                                    Портфель</a>
+                                <a class="dropdown-item" href="profile.html">
+                                    <i class="fas fa-user"></i>
+                                    Профиль</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="login.html">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    Выход</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="/customer/main.html" class="nav-link">
+                            <i class="fal fa-home"></i>
+                            Главная</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="/customer/bids.html" class="nav-link">
+                            <i class="fal fa-file-alt"></i>Заявки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/customer/profile.html" class="nav-link">
+                            <i class="fal fa-user-alt"></i>Профиль</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/customer/ticket.html" class="nav-link">
+                            <i class="fal fa-info-circle"></i>
+                            Поддержка</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row row-xs">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card card-status">
+                        <div class="media">
+                            <i class="fal fa-archive"></i>
+                            <div class="media-body">
+                                <h2>32,604</h2>
+                                <p>Всего заявок</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mg-t-10 mg-sm-t-0">
+                    <div class="card card-status">
+                        <div class="media">
+                            <i class="icon ion-ios-bookmarks-outline tx-teal"></i>
+                            <div class="media-body">
+                                <h2>17,583</h2>
+                                <p>Активных заявок</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mg-t-10 mg-lg-t-0">
+                    <div class="card card-status">
+                        <div class="media">
+                            <i class="icon ion-ios-cloud-upload-outline tx-primary"></i>
+                            <div class="media-body">
+                                <h2>61,119</h2>
+                                <p>Ожидають оплаты</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mg-t-10 mg-lg-t-0">
+                    <div class="card card-status">
+                        <div class="media">
+                            <i class="icon ion-ios-analytics-outline tx-pink"></i>
+                            <div class="media-body">
+                                <h2>2,942</h2>
+                                <p>Ожидают подтверждения</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-xs">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card card-info">
+                        <div class="card-body">
+                            <div class="card-title">Новая заявка</div>
+                            <form method="post">
+                                <input type="hidden" name="_token" value="0M8IPVOQ8xIVV4qjTOqnibXFeST5rqMFlaTx0GaW">
+                                <div class="form-group">
+                                    <label for="from">Откуда</label>
+                                    <input type="text" class="form-control" name="from" id="from" autocomplete="off" placeholder="Введите местоположение">
+                                </div>
+                                <div class="form-group">
+                                    <label for="to">Куда</label>
+                                    <input type="text" class="form-control" name="to" id="to" autocomplete="off" placeholder="Введите местоположение">
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="persons">Количество человек</label>
+                                            <input type="number" class="form-control" name="persons" id="persons" min="1" value="1">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="departure_date">Дата отправления</label>
+                                            <input type="date" class="form-control" name="departure_date" id="departure_date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="price">Фиксированная стоимость</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">₽</span>
+                                        </div>
+                                        <input type="number" class="form-control" name="price" id="price" min="0" value="0">
+                                    </div>
+                                    <small class="form-text text-muted">Укажите 0, если хотите получить предложения со стоимостью от перевозчиков</small>
+
+                                </div>
+                                <div class="form-group">
+                                    <label id="distance">Примерное расстояние: ∞</label>
+                                    <br>
+                                    <label id="duration">Примерное время в пути: ∞</label>
+                                </div>
+                                <button class="btn btn-primary">Подать заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="card card-table">
+                        <div class="card-body">
+                            <div class="card-title">Маршрут</div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.500514175605!2d49.13237976699345!3d55.78454639271894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead0ec882247d%3A0x9e88549771e55ac8!2z0YPQuy4g0KPQu9GM0Y_QvdC-0LLQsC3Qm9C10L3QuNC90LAsIDIyLCDQmtCw0LfQsNC90YwsINCg0LXRgdC_LiDQotCw0YLQsNGA0YHRgtCw0L0sIDQyMDAxMg!5e0!3m2!1sru!2sru!4v1522751701435"
+                                height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>AltoBus v01.04 © 2018</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>AltoBus</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css"></link>
+    <link rel="stylesheet" href="../assets/fontawesome/css/fontawesome-all.min.css">
+</head>
+
+<body class="body">
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="col justify-content-end align-items-center">
+                    <h2 class="navbar-brand">
+                        <a href="main.html">AltoBus</a>
+                    </h2>
+                    <ul class="list-inline float-right">
+                        <li class="list-inline-item">
+                            <a class="btn header-notification" id="dropdownChat" data-toggle="dropdown">
+                                <i class="fal fa-bell"></i>
+                            </a>
+                            <div class="dropdown-menu chat" aria-labelledby="dropdownChat">
+
+                            </div>
+                        </li>
+                        <li class="list-inline-item dropdown">
+                            <a class="btn dropdown-toggle logged-user" id="dropdownMenuLink" data-toggle="dropdown">
+                                Стратегическое Решение+
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="index.html">
+                                    <i class="fas fa-chart-bar"></i>
+                                    Сделки</a>
+                                <a class="dropdown-item" href="portfolio.html">
+                                    <i class="fas fa-briefcase"></i>
+                                    Портфель</a>
+                                <a class="dropdown-item" href="profile.html">
+                                    <i class="fas fa-user"></i>
+                                    Профиль</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="login.html">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    Выход</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="/customer/main.html" class="nav-link">
+                            <i class="fal fa-home"></i>
+                            Главная</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="/customer/bids.html" class="nav-link  active">
+                            <i class="fal fa-file-alt"></i>Заявки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/customer/profile.html" class="nav-link">
+                            <i class="fal fa-user-alt"></i>Профиль</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/customer/ticket.html" class="nav-link">
+                            <i class="fal fa-info-circle"></i>
+                            Поддержка</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row row-xs">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card card-status">
+                        <div class="media">
+                            <i class="fal fa-archive"></i>
+                            <div class="media-body">
+                                <h2>32,604</h2>
+                                <p>Всего заявок</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mg-t-10 mg-sm-t-0">
+                    <div class="card card-status">
+                        <div class="media">
+                            <i class="icon ion-ios-bookmarks-outline tx-teal"></i>
+                            <div class="media-body">
+                                <h2>17,583</h2>
+                                <p>Активных заявок</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mg-t-10 mg-lg-t-0">
+                    <div class="card card-status">
+                        <div class="media">
+                            <i class="icon ion-ios-cloud-upload-outline tx-primary"></i>
+                            <div class="media-body">
+                                <h2>61,119</h2>
+                                <p>Ожидают оплаты</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mg-t-10 mg-lg-t-0">
+                    <div class="card card-status">
+                        <div class="media">
+                            <i class="icon ion-ios-analytics-outline tx-pink"></i>
+                            <div class="media-body">
+                                <h2>2,942</h2>
+                                <p>Ожидают подтверждения</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-xs">
+                <div class="col-lg-6">
+                    <div class="card card-table">
+                        <div class="card-body">
+                            <div class="card-title">Данные о заявке</div>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <b>Откуда</b>
+                                            </td>
+                                            <td>Казань, Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Куда</b>
+                                            </td>
+                                            <td>Москва, Россия</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Пассажиров</b>
+                                            </td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Стоимость</b>
+                                            </td>
+                                            <td>14 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Дата отправления</b>
+                                            </td>
+                                            <td>18.04.2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Статус</b>
+                                            </td>
+                                            <td>Выбор перевозчика</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a class="btn btn-outline-primary" href="/customer/create.html">
+                                Редактировать заявку
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card card-table">
+                        <div class="card-body">
+                            <div class="card-title">Поступившие предложения</div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered mg-b-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Перевозчик</th>
+                                            <th>Стоимость</th>
+                                            <th class="col-menu"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ООО Доставка</td>
+                                            <td>20800</td>
+                                            <td>
+                                                <div class="btn-group" role="group">
+                                                    <a class="btn btn-sm btn-outline-primary" href="/customer/about-carrier.html" data-toggle="tooltip" data-placement="bottom"
+                                                        title="Информация о перевозчике">
+                                                        <i class="fal fa-info"></i>
+                                                    </a>
+                                                    <a class="btn btn-sm btn-outline-primary" href="#" data-toggle="tooltip" data-placement="bottom" title="Выбрать перевозчика">
+                                                        <i class="fal fa-check"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card card-table">
+                        <div class="card-body">
+                            <div class="card-title">Детали поездки</div>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <b>Название компании</b>
+                                            </td>
+                                            <td>ООО Доставка</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Номер лицензии</b>
+                                            </td>
+                                            <td>АБ 16 331200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Контактный телефон</b>
+                                            </td>
+                                            <td>+89646247824</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Марка автобуса</th>
+                                            <th>Номер автобуса</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ООО Доставка</td>
+                                            <td>20800</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        Если перевозчик выбран, поступившие предложения удаляем, а данные поездки показываем
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>AltoBus v01.04 © 2018</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $(window).on('load', function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>
